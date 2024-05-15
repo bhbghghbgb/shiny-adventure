@@ -4,17 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyside6 = "*"
-qasync = "*"
 python-ffmpeg = "*"
 pymusiclooper = "*"
 rich = "*"
 pytest = "*"
-pytest-qt = "*"
 wakepy = "*"
 rebooter = "*"
 platformdirs = "*"
 pyinstaller = "*"
+pyside6 = "*"
+qasync = "*"
+pytest-qt = "*"
 
 [dev-packages]
 

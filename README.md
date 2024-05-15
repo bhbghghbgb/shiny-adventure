@@ -6,3 +6,4 @@ do an down vid zootub mon phan mem ma nguon mo
 
 -   pipenv
 -   Python 3.12
+-   ffmpeg
