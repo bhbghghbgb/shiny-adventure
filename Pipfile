@@ -15,9 +15,12 @@ pyinstaller = "*"
 pyside6 = "*"
 qasync = "*"
 pytest-qt = "*"
+dearrow = {file = "https://github.com/QuantumWarpCode/yt-dlp-dearrow/archive/master.zip"}
+yt-dont-lock-p = {file = "https://github.com/Grub4K/yt-dont-lock-p/archive/main.zip"}
+returnyoutubedislike = {file = "https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike/archive/master.zip"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.12"
-python_full_version = "3.12.2"
+python_full_version = "3.12.3"
