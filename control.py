@@ -6,7 +6,7 @@ import string_utils
 import yt_dlp
 
 from exceptions import UiCorruptionError
-from main import MainWindow
+from ui.main_window import MainWindow
 
 
 @dataclass
@@ -34,8 +34,9 @@ class MainController:
         """Path and filename will be joined to an output path.
         File extension is appended to filename."""
         # path and link
+        parent_path = self.ui.lineEdit_argument_path.text()
         filename = f"{self.ui.lineEdit_argument_filename.text()}.%(ext)s"
-        path = os.path.join(self.ui.lineEdit_argument_path, filename)
+        path = os.path.join(parent_path, filename)
         link = self.ui.lineEdit_argument_link.text()
         path_and_link = path, link
 

@@ -1,34 +1,9 @@
 import asyncio
 import sys
 
-from PySide6.QtWidgets import QMainWindow, QMessageBox
-from qasync import QApplication, QEventLoop, asyncClose, asyncSlot
+from qasync import QApplication, QEventLoop
 
-from ui.ui import Ui_MainWindow
-
-
-class MainWindow(QMainWindow, Ui_MainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
-
-        self.action_About_shiny_adventure.triggered.connect(self.aboutMe)
-
-    @asyncClose
-    async def closeEvent(self, event):
-        pass
-
-    @asyncSlot()
-    async def aboutMe(self):
-        QMessageBox.about(
-            self,
-            "About shiny-adventure",
-            "<h2>shiny-adventure is a one-paragraph blurb bruh blah</h2>"
-            "<p align='center'>This application was created by bhbghghbgb.<br>"
-            "MIT License<br>"
-            "Copyright 2024-2024 Such-and-such.<br>"
-            "For more information, visit my <a href='https://github.com/bhbghghbgb/shiny-adventure'>GitHub page</a>.</p>",
-        )
+from ui.main_window import MainWindow
 
 
 if __name__ == "__main__":
