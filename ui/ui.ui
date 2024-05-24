@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_general">
+       <attribute name="title">
+        <string>General</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="groupBox_quality">
+          <property name="title">
+           <string>Quality</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton_3">
+             <property name="text">
+              <string>Best</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="radioButton_5">
+             <property name="text">
+              <string>At most</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="radioButton_6">
+             <property name="text">
+              <string>At least</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1" rowspan="2">
+            <widget class="QComboBox" name="comboBox_3">
+             <item>
+              <property name="text">
+               <string>1080p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>720p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>480p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>360p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>240p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>144p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1440p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2160p</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4320p</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QRadioButton" name="radioButton_4">
+             <property name="text">
+              <string>Worst</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_arguments">
+          <property name="title">
+           <string>Arguments</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="2">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="placeholderText">
+              <string>https://www.youtube.com/watch?v=dQw4w9WgXcQ</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_argument_link">
+             <property name="text">
+              <string>Link</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_argument_path">
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="pushButton">
+             <property name="text">
+              <string>Multiple...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="placeholderText">
+              <string>C:\Users\Public\Videos</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>yt-dlp
+args</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QToolButton" name="toolButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>▼</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="placeholderText">
+              <string>--add-headers FIELD:VALUE --username USERNAME --password PASSWORD --twofactor TWOFACTOR</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="placeholderText">
+              <string>%(title)s [%(id)s]</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Filename</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QToolButton" name="toolButton_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>↺</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="text">
+              <string>Browse...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_argument_ytdlp_conf">
+             <property name="text">
+              <string>yt-dlp
+conf file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLineEdit" name="lineEdit_10">
+             <property name="placeholderText">
+              <string>./yt-dlp.conf</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="text">
+              <string>Browse...</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QCheckBox" name="checkBox_ytdlp_conf">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3" colspan="2">
+            <widget class="QLabel" name="label_argument_filename_help">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#output-template&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Output template&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3" colspan="2">
+            <widget class="QLabel" name="label_argument_ytdlp_args_help">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Usage &amp;amp; options&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_stream">
+          <property name="title">
+           <string>Stream</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton">
+             <property name="text">
+              <string>Video &amp;&amp; Audio</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioButton_2">
+             <property name="text">
+              <string>Audio only</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QGroupBox" name="groupBox_format">
+          <property name="title">
+           <string>Format</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Video</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="comboBox">
+             <item>
+              <property name="text">
+               <string>bestvideo</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3gp</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>flv</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>mp4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>webm</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboBox_2">
+             <item>
+              <property name="text">
+               <string>bestaudio</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>aac</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>m4a</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ogg</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>wav</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Audio</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" rowspan="2">
+            <widget class="QCheckBox" name="checkBox_32">
+             <property name="text">
+              <string>Prefer video formats
+with free containers
+over non-free</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="3">
+         <widget class="QGroupBox" name="groupBox_info">
+          <property name="title">
+           <string>Info</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QToolButton" name="toolButton_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>yt-dlp --help</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="toolButton_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>yt-dlp --version</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp's GitHub&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_commands">
+          <property name="title">
+           <string>Commands</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="text">
+              <string>Start</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="text">
+              <string>Stop</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="text">
+              <string>Remove selected</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_spices">
+       <attribute name="title">
+        <string>Spices</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="1" column="2" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_18">
+          <property name="title">
+           <string>Post-processing for embeds</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_45">
+             <property name="text">
+              <string>Do not overwrite
+post-processed files</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_44">
+             <property name="text">
+              <string>Keep the intermediate
+video file on disk after
+post-processing</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="lineEdit_12"/>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLineEdit" name="lineEdit_11"/>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="checkBox_71">
+             <property name="text">
+              <string>Remux</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QCheckBox" name="checkBox_70">
+             <property name="text">
+              <string>Recode</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#post-processing-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read remux and recode Post-Processing Options&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Thumbnail</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox">
+             <property name="text">
+              <string>Write thumbnail</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QComboBox" name="comboBox_6">
+             <item>
+              <property name="text">
+               <string>jpg</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>png</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>webp</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBox_34">
+             <property name="text">
+              <string>Convert format</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="checkBox_33">
+             <property name="text">
+              <string>Embed as cover art</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="text">
+              <string>Write all formats</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1" rowspan="3">
+         <widget class="QGroupBox" name="groupBox_10">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Subtitle</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="2" column="0" rowspan="2">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Languages&lt;br/&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#subtitle-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read rules&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_35">
+             <property name="text">
+              <string>Write subtitles</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QCheckBox" name="checkBox_36">
+             <property name="text">
+              <string>Convert format</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QComboBox" name="comboBox_7">
+             <item>
+              <property name="text">
+               <string>srt</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ass</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>vtt</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>lrc</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="checkBox_38">
+             <property name="text">
+              <string>Format</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="comboBox_8">
+             <item>
+              <property name="text">
+               <string>srt</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ass</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>vtt</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>lrc</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QRadioButton" name="radioButton_7">
+             <property name="text">
+              <string>All</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QRadioButton" name="radioButton_8">
+             <property name="text">
+              <string>Manual</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_37">
+             <property name="text">
+              <string>Write auto-sub</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_39">
+             <property name="text">
+              <string>Embed subtitles</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineEdit_5"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_17">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Meatdata</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_41">
+             <property name="text">
+              <string>Embed chapters</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_42">
+             <property name="text">
+              <string>Embed info.json</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_40">
+             <property name="text">
+              <string>Embed metadata</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_43">
+             <property name="text">
+              <string>Write xattrs</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QGroupBox" name="groupBox_24">
+          <property name="title">
+           <string>Commands</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_28">
+           <item row="0" column="2">
+            <widget class="QToolButton" name="toolButton_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Run
+--list-formats</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="toolButton_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Run
+--list-subs</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QToolButton" name="toolButton_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Run
+--list-thumbnails</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QToolButton" name="toolButton_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Run
+--list-extractors</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_miscellaneous">
+       <attribute name="title">
+        <string>Miscellaneous</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>Return Youtube Dislikes</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_21">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_46">
+             <property name="text">
+              <string>Add a Youtube Dislike count to Youtube video metadata</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-ReturnYoutubeDislike plugin&lt;/span&gt;&lt;/a&gt;. Then use &lt;span style=&quot; font-weight:600;&quot;&gt;%(dislike_count)s&lt;br/&gt;&lt;/span&gt;Updated info fields: like_count, dislike_count, average_rating, view_count&lt;br/&gt;The original values of those fields and the response from the API are saved&lt;br/&gt;under &lt;span style=&quot; font-weight:600;&quot;&gt;RYD&lt;/span&gt; key in the info dict&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_20">
+          <property name="title">
+           <string>Don't lock</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_23">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_49">
+             <property name="text">
+              <string>Keep awake during yt-dlp's execution</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/Grub4K/yt-dont-lock-p&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dont-lock-p plugin&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Only applies to yt-dlp's execution&lt;/p&gt;&lt;p&gt;🛈 Doesn't apply to &lt;span style=&quot; text-decoration: underline;&quot;&gt;Extra processing&lt;/span&gt;&lt;br/&gt;Use &lt;span style=&quot; text-decoration: underline;&quot;&gt;Behavior&lt;/span&gt; for that&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>Internet shortcut</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_4">
+             <property name="text">
+              <string>.url Windows</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_5">
+             <property name="text">
+              <string>.webloc macOS</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_3">
+             <property name="text">
+              <string>Current platform</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBox_6">
+             <property name="text">
+              <string>.desktop Linux</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="groupBox_19">
+          <property name="title">
+           <string>DeArrow</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_22">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_47">
+             <property name="text">
+              <string>Replace title</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_48">
+             <property name="text">
+              <string>Download thumbnail</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/QuantumWarpCode/yt-dlp-dearrow&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-dearrow plugin&lt;/span&gt;&lt;/a&gt;, replaces &lt;span style=&quot; font-weight:600;&quot;&gt;%(title)s&lt;br/&gt;&lt;/span&gt;Access original with &lt;span style=&quot; font-weight:600;&quot;&gt;%(original_title)s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Manually download an additional thumbnail&lt;br/&gt;an image (webp) from &lt;a href=&quot;https://wiki.sponsor.ajay.app/w/API_Docs/DeArrow#GET_/api/v1/getThumbnail&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;DeArrow's API&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QGroupBox" name="groupBox_21">
+          <property name="title">
+           <string>SponsorBlock</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_24">
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioButton_10">
+             <property name="text">
+              <string>Remove</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioButton_9">
+             <property name="text">
+              <string>Disable</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="radioButton_11">
+             <property name="text">
+              <string>Mark</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="checkBox_50">
+             <property name="text">
+              <string>default</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QCheckBox" name="checkBox_52">
+             <property name="text">
+              <string>chapter</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="checkBox_51">
+             <property name="text">
+              <string>all</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="3">
+            <widget class="Line" name="line">
+             <property name="lineWidth">
+              <number>5</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QCheckBox" name="checkBox_53">
+             <property name="text">
+              <string>sponsor</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_54">
+             <property name="text">
+              <string>intro</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QCheckBox" name="checkBox_55">
+             <property name="text">
+              <string>outro</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QCheckBox" name="checkBox_56">
+             <property name="text">
+              <string>selfpromo</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QCheckBox" name="checkBox_57">
+             <property name="text">
+              <string>preview</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="checkBox_58">
+             <property name="text">
+              <string>filler</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QCheckBox" name="checkBox_59">
+             <property name="text">
+              <string>interaction</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QCheckBox" name="checkBox_60">
+             <property name="text">
+              <string>music_offtopic</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QCheckBox" name="checkBox_61">
+             <property name="text">
+              <string>poi_highlight</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_filesystem">
+       <attribute name="title">
+        <string>Filesystem</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_12">
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="groupBox_11">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Cookies</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_16">
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Profile</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Container</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QCheckBox" name="checkBox_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Read and dump cookie jar in</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLineEdit" name="lineEdit_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QWidget" name="widget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_6"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButton_5">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QComboBox" name="comboBox_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>deselected (windows)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>gnomekeyring</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>basictext</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>kwallet</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>kwallet5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>kwallet6</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Keyring</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QCheckBox" name="checkBox_8">
+                <property name="text">
+                 <string>Read from browser</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>chrome</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>firefox</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>edge</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>brave</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>safari</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>chromium</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>vivaldi</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>whale</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Miscellaneous</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="5" column="2">
+            <widget class="QCheckBox" name="checkBox_22">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Retrieve video comments
+to be placed in the infojson</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QCheckBox" name="checkBox_18">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Do not use .part files -
+write directly into output file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="checkBox_19">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Do not use the Last-modified
+header to set the file
+modification time</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QCheckBox" name="checkBox_20">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Write video description to a
+.description file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Force filenames to be
+Windows-compatible</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Restrict filenames to only
+ASCII characters, and
+avoid &quot;&amp;&amp;&quot; and spaces</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_17">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Do not resume partially
+downloaded fragments</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QCheckBox" name="checkBox_15">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Do not overwrite any files</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QCheckBox" name="checkBox_16">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Force overwrite all
+video and metadata files</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="checkBox_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Limit the filename length
+(excluding extension) to</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QSpinBox" name="spinBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimum">
+              <number>10</number>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="singleStep">
+              <number>10</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QCheckBox" name="checkBox_21">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Write video metadata to a
+.info.json file</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_advanced">
+       <attribute name="title">
+        <string>Advanced</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="0" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_13">
+          <property name="title">
+           <string>Simulation</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_23">
+             <property name="text">
+              <string>No simulation (Download
+the video even if
+printing/listing options
+are used)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_24">
+             <property name="text">
+              <string>Do not download the video
+but write all related files</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_25">
+             <property name="text">
+              <string>Ignore &quot;No video formats&quot;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QCheckBox" name="checkBox_26">
+             <property name="text">
+              <string>Force write archive</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QCheckBox" name="checkBox_27">
+             <property name="text">
+              <string>Force simulation (Do not
+download the video and
+do not write any files)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QGroupBox" name="groupBox_16">
+          <property name="title">
+           <string>Workarounds</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_18">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_28">
+             <property name="text">
+              <string>HTTPS without SRFC 5746
+secure renegotiation</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_30">
+             <property name="text">
+              <string>Sleep between requests</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_29">
+             <property name="text">
+              <string>No HTTPS certificate
+validation</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_31">
+             <property name="text">
+              <string>Sleep each download</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="spinBox_3">
+             <property name="toolTip">
+              <string>minimum in seconds</string>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="singleStep">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSpinBox" name="spinBox_4">
+             <property name="toolTip">
+              <string>maximum in seconds</string>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="singleStep">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" colspan="2">
+            <widget class="QSpinBox" name="spinBox_2">
+             <property name="toolTip">
+              <string>in seconds</string>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="maximum">
+              <number>9999</number>
+             </property>
+             <property name="singleStep">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QGroupBox" name="groupBox_14">
+          <property name="title">
+           <string>Cache</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_10">
+             <property name="text">
+              <string>Disable filesystem caching</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_9"/>
+              </item>
+              <item>
+               <widget class="QToolButton" name="toolButton_6">
+                <property name="text">
+                 <string>...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="checkBox_11">
+             <property name="text">
+              <string>Delete all filesystem cache</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="2">
+            <widget class="QCheckBox" name="checkBox_9">
+             <property name="text">
+              <string>Set cache dir where yt-dlp
+can store downloaded
+information permanently</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_15">
+          <property name="title">
+           <string>Download</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_25">
+           <item row="3" column="1">
+            <widget class="QComboBox" name="comboBox_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>B</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>K</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>M</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>G</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QComboBox" name="comboBox_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>30</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <item>
+              <property name="text">
+               <string>B</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>K</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>M</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>G</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="2" colspan="2">
+            <widget class="QCheckBox" name="checkBox_64">
+             <property name="text">
+              <string>Assumed
+throttled rate</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+             <property name="decimals">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <double>999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_63">
+             <property name="text">
+              <string>Maximum
+download rate</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2" colspan="2">
+            <widget class="QCheckBox" name="checkBox_67">
+             <property name="text">
+              <string>Retry sleep</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_65">
+             <property name="text">
+              <string>Retries (infinite
+OR count)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QSpinBox" name="spinBox_5"/>
+           </item>
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="checkBox_66">
+             <property name="text">
+              <string>infinite</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="4">
+            <widget class="Line" name="line_2">
+             <property name="lineWidth">
+              <number>5</number>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2" colspan="2">
+            <widget class="QSpinBox" name="spinBox_6">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="4">
+            <widget class="QCheckBox" name="checkBox_68">
+             <property name="text">
+              <string>Keep fragments after download</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_extra_processing">
+       <attribute name="title">
+        <string>Extra processing</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_26">
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_25">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>PyMusicLooper (loop detection general settings)</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_30">
+           <item row="0" column="2">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+             <property name="suffix">
+              <string>x</string>
+             </property>
+             <property name="maximum">
+              <double>1.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="value">
+              <double>0.350000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="checkBox_75">
+             <property name="text">
+              <string>Min duration
+multiplier</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_78">
+             <property name="text">
+              <string>Brute force</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QComboBox" name="comboBox_12">
+             <item>
+              <property name="text">
+               <string>WAV</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FLAC</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>OGG</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MP3</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QCheckBox" name="checkBox_79">
+             <property name="text">
+              <string>Override split or extend
+output format</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+             <property name="toolTip">
+              <string>Max</string>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <double>9999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+             <property name="toolTip">
+              <string>Min</string>
+             </property>
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="maximum">
+              <double>9999.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" rowspan="2">
+            <widget class="QCheckBox" name="checkBox_76">
+             <property name="text">
+              <string>Loop
+durations</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_22">
+          <property name="title">
+           <string>FFmpeg</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_27">
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="checkBox_69">
+             <property name="text">
+              <string>Run a pass of ffmpeg for each yt-dlpprocessed video</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1" rowspan="2">
+            <widget class="QLabel" name="label_21">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://ffmpeg.org/documentation.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;FFmpeg's documentation&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Output container&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" rowspan="2">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input and ouput params are already provided as follows:&lt;br/&gt;&amp;gt; ffmpeg &lt;span style=&quot; font-weight:600;&quot;&gt;-i %(_filename)s &lt;/span&gt;[...]&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;%(_filename)s&lt;/span&gt;_ffmpeg.&lt;span style=&quot; font-weight:600;&quot;&gt;[Output container]&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QPlainTextEdit" name="plainTextEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="placeholderText">
+              <string>-filter:v scale=720:-1 -c:a copy</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="2">
+         <widget class="QGroupBox" name="groupBox_23">
+          <property name="title">
+           <string>PyMusicLooper (export settings)</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_29">
+           <item row="5" column="0">
+            <widget class="QCheckBox" name="checkBox_74">
+             <property name="text">
+              <string>Format exports as</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2" colspan="2">
+            <widget class="QRadioButton" name="radioButton_14">
+             <property name="text">
+              <string>Tag the input file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QCheckBox" name="checkBox_73">
+             <property name="text">
+              <string>Top N loop points</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QSpinBox" name="spinBox_7">
+             <property name="minimum">
+              <number>-1</number>
+             </property>
+             <property name="maximum">
+              <number>999</number>
+             </property>
+             <property name="value">
+              <number>1</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2" colspan="2">
+            <widget class="QCheckBox" name="checkBox_77">
+             <property name="text">
+              <string>Override tag names</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="comboBox_11">
+             <item>
+              <property name="text">
+               <string>SAMPLES</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SECONDS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>TIME (mm:ss.sss)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLineEdit" name="lineEdit_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>LOOP_START</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QLineEdit" name="lineEdit_15">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>LOOP_END</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2" colspan="2">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Interactive mode is not supported&lt;br/&gt;Only export commands is used&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="4">
+            <widget class="QCheckBox" name="checkBox_72">
+             <property name="text">
+              <string>Run a pass of pymusiclooper for each yt-dlp processed video</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_23">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Extended length</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="maximum">
+              <double>9999.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>3600.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/arkrow/PyMusicLooper/blob/master/CLI_README.md&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read PyMusicLopper's documentzation&lt;/span&gt;&lt;/a&gt;.&lt;br/&gt;Input audio is already provided&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_24">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Fade out duration</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
+             <property name="suffix">
+              <string>s</string>
+             </property>
+             <property name="maximum">
+              <double>9999.000000000000000</double>
+             </property>
+             <property name="singleStep">
+              <double>0.100000000000000</double>
+             </property>
+             <property name="value">
+              <double>5.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2" colspan="2">
+            <widget class="QRadioButton" name="radioButton_13">
+             <property name="text">
+              <string>Split the input file</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2" rowspan="2" colspan="2">
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Split the input audio into intro,&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;loop &lt;/span&gt;and outro sections&lt;br/&gt;🛈 Play the &lt;span style=&quot; font-weight:600;&quot;&gt;loop&lt;/span&gt; section with&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gapless_playback&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;gapless playback&lt;/span&gt;&lt;/a&gt; for immediate effect&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QRadioButton" name="radioButton_12">
+             <property name="text">
+              <string>Export to text file</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QRadioButton" name="radioButton_15">
+             <property name="text">
+              <string>Extends the input file</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_behavior">
+       <attribute name="title">
+        <string>Behavior</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_31">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_26">
+          <property name="title">
+           <string>AFK</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_32">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_26">
+             <property name="text">
+              <string>While running</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QRadioButton" name="radioButton_21">
+             <property name="text">
+              <string>Close this application</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_27">
+             <property name="text">
+              <string>When done</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QRadioButton" name="radioButton_16">
+             <property name="text">
+              <string>Keep PC running</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QRadioButton" name="radioButton_18">
+             <property name="text">
+              <string>Restart PC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QRadioButton" name="radioButton_17">
+             <property name="text">
+              <string>Turn off PC</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="checkBox_80">
+             <property name="text">
+              <string>Keep PC awake</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QRadioButton" name="radioButton_19">
+             <property name="text">
+              <string>Run command</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLineEdit" name="lineEdit_16">
+             <property name="placeholderText">
+              <string>curl -i -H &quot;Accept: application/json&quot; -H &quot;Content-Type:application/json&quot; -X POST --data &quot;{&quot;content&quot;: &quot;shiny-adventure&quot;}&quot; discord-webhook-link</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1" alignment="Qt::AlignTop">
+         <widget class="QGroupBox" name="groupBox_28">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>Workers</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_30">
+             <property name="text">
+              <string>yt-dlp workers</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBox_8">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>16</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_31">
+             <property name="text">
+              <string>Extra processing workers</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSpinBox" name="spinBox_9">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>16</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="label_29">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Not implemented&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::RichText</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_status">
+      <property name="title">
+       <string>Status</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTreeView" name="treeView_status"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>873</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_About">
+    <property name="title">
+     <string>&amp;About</string>
+    </property>
+    <addaction name="action_About_shiny_adventure"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_About"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Exit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="action_About_shiny_adventure">
+   <property name="text">
+    <string>&amp;About shiny-adventure...</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
