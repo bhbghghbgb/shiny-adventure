@@ -18,6 +18,7 @@ pytest-qt = "*"
 dearrow = {file = "https://github.com/QuantumWarpCode/yt-dlp-dearrow/archive/master.zip"}
 yt-dont-lock-p = {file = "https://github.com/Grub4K/yt-dont-lock-p/archive/main.zip"}
 returnyoutubedislike = {file = "https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike/archive/master.zip"}
+python-string-utils = "*"
 
 [dev-packages]
 

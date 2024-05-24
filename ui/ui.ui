@@ -246,7 +246,7 @@ conf file</string>
             </widget>
            </item>
            <item row="3" column="4">
-            <widget class="QCheckBox" name="checkBox_ytdlp_conf">
+            <widget class="QCheckBox" name="checkBox_argument_ytdlp_conf">
              <property name="text">
               <string/>
              </property>
@@ -1711,10 +1711,10 @@ validation</string>
               <string>s</string>
              </property>
              <property name="maximum">
-              <number>9999</number>
+              <number>999</number>
              </property>
              <property name="singleStep">
-              <number>100</number>
+              <number>1</number>
              </property>
             </widget>
            </item>
@@ -1727,10 +1727,10 @@ validation</string>
               <string>s</string>
              </property>
              <property name="maximum">
-              <number>9999</number>
+              <number>999</number>
              </property>
              <property name="singleStep">
-              <number>100</number>
+              <number>1</number>
              </property>
             </widget>
            </item>
@@ -1743,10 +1743,10 @@ validation</string>
               <string>s</string>
              </property>
              <property name="maximum">
-              <number>9999</number>
+              <number>999</number>
              </property>
              <property name="singleStep">
-              <number>100</number>
+              <number>1</number>
              </property>
             </widget>
            </item>

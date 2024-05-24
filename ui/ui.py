@@ -176,10 +176,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout.addWidget(self.pushButton_argument_ytdlp_conf_browse, 3, 3, 1, 1)
 
-        self.checkBox_ytdlp_conf = QCheckBox(self.groupBox_arguments)
-        self.checkBox_ytdlp_conf.setObjectName(u"checkBox_ytdlp_conf")
+        self.checkBox_argument_ytdlp_conf = QCheckBox(self.groupBox_arguments)
+        self.checkBox_argument_ytdlp_conf.setObjectName(u"checkBox_argument_ytdlp_conf")
 
-        self.gridLayout.addWidget(self.checkBox_ytdlp_conf, 3, 4, 1, 1)
+        self.gridLayout.addWidget(self.checkBox_argument_ytdlp_conf, 3, 4, 1, 1)
 
         self.label_argument_filename_help = QLabel(self.groupBox_arguments)
         self.label_argument_filename_help.setObjectName(u"label_argument_filename_help")
@@ -1035,22 +1035,22 @@ class Ui_MainWindow(object):
 
         self.spinBox_workaround_sleep_interval_min = QSpinBox(self.groupBox_workaround)
         self.spinBox_workaround_sleep_interval_min.setObjectName(u"spinBox_workaround_sleep_interval_min")
-        self.spinBox_workaround_sleep_interval_min.setMaximum(9999)
-        self.spinBox_workaround_sleep_interval_min.setSingleStep(100)
+        self.spinBox_workaround_sleep_interval_min.setMaximum(999)
+        self.spinBox_workaround_sleep_interval_min.setSingleStep(1)
 
         self.gridLayout_18.addWidget(self.spinBox_workaround_sleep_interval_min, 1, 2, 1, 1)
 
         self.spinBox_workaround_sleep_interval_max = QSpinBox(self.groupBox_workaround)
         self.spinBox_workaround_sleep_interval_max.setObjectName(u"spinBox_workaround_sleep_interval_max")
-        self.spinBox_workaround_sleep_interval_max.setMaximum(9999)
-        self.spinBox_workaround_sleep_interval_max.setSingleStep(100)
+        self.spinBox_workaround_sleep_interval_max.setMaximum(999)
+        self.spinBox_workaround_sleep_interval_max.setSingleStep(1)
 
         self.gridLayout_18.addWidget(self.spinBox_workaround_sleep_interval_max, 1, 3, 1, 1)
 
         self.spinBox_workaround_sleep_requests = QSpinBox(self.groupBox_workaround)
         self.spinBox_workaround_sleep_requests.setObjectName(u"spinBox_workaround_sleep_requests")
-        self.spinBox_workaround_sleep_requests.setMaximum(9999)
-        self.spinBox_workaround_sleep_requests.setSingleStep(100)
+        self.spinBox_workaround_sleep_requests.setMaximum(999)
+        self.spinBox_workaround_sleep_requests.setSingleStep(1)
 
         self.gridLayout_18.addWidget(self.spinBox_workaround_sleep_requests, 0, 2, 1, 2)
 
@@ -1624,7 +1624,7 @@ class Ui_MainWindow(object):
 "conf file", None))
         self.lineEdit_argument_ytdlp_conf.setPlaceholderText(QCoreApplication.translate("MainWindow", u"./yt-dlp.conf", None))
         self.pushButton_argument_ytdlp_conf_browse.setText(QCoreApplication.translate("MainWindow", u"Browse...", None))
-        self.checkBox_ytdlp_conf.setText("")
+        self.checkBox_argument_ytdlp_conf.setText("")
         self.label_argument_filename_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#output-template\"><span style=\" text-decoration: underline; color:#0000ff;\">Output template</span></a></p></body></html>", None))
         self.label_argument_ytdlp_args_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options\"><span style=\" text-decoration: underline; color:#0000ff;\">Usage &amp; options</span></a></p></body></html>", None))
         self.groupBox_stream.setTitle(QCoreApplication.translate("MainWindow", u"Stream", None))
