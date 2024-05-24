@@ -258,10 +258,13 @@ conf file</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#output-template&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Output template&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -271,10 +274,13 @@ conf file</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#usage-and-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Usage &amp;amp; options&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -447,7 +453,10 @@ over non-free</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp's GitHub&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -546,7 +555,10 @@ post-processing</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#post-processing-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read remux and recode Post-Processing Options&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -633,7 +645,10 @@ post-processing</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Languages&lt;br/&gt;&lt;a href=&quot;https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#subtitle-options&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read rules&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -874,10 +889,13 @@ post-processing</string>
            <item row="1" column="0">
             <widget class="QLabel" name="label_returnytdislikes_help">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-ReturnYoutubeDislike plugin&lt;/span&gt;&lt;/a&gt;. Then use &lt;span style=&quot; font-weight:600;&quot;&gt;%(dislike_count)s&lt;br/&gt;&lt;/span&gt;Updated info fields: like_count, dislike_count, average_rating, view_count&lt;br/&gt;The original values of those fields and the response from the API are saved&lt;br/&gt;under &lt;span style=&quot; font-weight:600;&quot;&gt;RYD&lt;/span&gt; key in the info dict&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Uses &lt;a href=&quot;https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-ReturnYoutubeDislike plugin&lt;/span&gt;&lt;/a&gt;. Then use &lt;span style=&quot; font-weight:600;&quot;&gt;%(dislike_count)s&lt;br/&gt;&lt;/span&gt;Updated info fields: like_count, dislike_count, average_rating, view_count&lt;br/&gt;The original values of those fields and the response from the API are saved&lt;br/&gt;under &lt;span style=&quot; font-weight:600;&quot;&gt;RYD&lt;/span&gt; key in the info dict&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -900,10 +918,13 @@ post-processing</string>
            <item row="1" column="0">
             <widget class="QLabel" name="label_dontlock_help">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/Grub4K/yt-dont-lock-p&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dont-lock-p plugin&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Only applies to yt-dlp's execution&lt;/p&gt;&lt;p&gt;🛈 Doesn't apply to &lt;span style=&quot; text-decoration: underline;&quot;&gt;Extra processing&lt;/span&gt;&lt;br/&gt;Use &lt;span style=&quot; text-decoration: underline;&quot;&gt;Behavior&lt;/span&gt; for that&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Uses &lt;a href=&quot;https://github.com/Grub4K/yt-dont-lock-p&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dont-lock-p plugin&lt;br/&gt;&lt;/span&gt;&lt;/a&gt;Only applies to yt-dlp's execution&lt;/p&gt;&lt;p&gt;&amp;#128712; Doesn't apply to &lt;span style=&quot; text-decoration: underline;&quot;&gt;Extra processing&lt;/span&gt;&lt;br/&gt;Use &lt;span style=&quot; text-decoration: underline;&quot;&gt;Behavior&lt;/span&gt; for that&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -970,20 +991,26 @@ post-processing</string>
            <item row="0" column="1">
             <widget class="QLabel" name="label_dearrow_title_help">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Uses &lt;a href=&quot;https://github.com/QuantumWarpCode/yt-dlp-dearrow&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-dearrow plugin&lt;/span&gt;&lt;/a&gt;, replaces &lt;span style=&quot; font-weight:600;&quot;&gt;%(title)s&lt;br/&gt;&lt;/span&gt;Access original with &lt;span style=&quot; font-weight:600;&quot;&gt;%(original_title)s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Uses &lt;a href=&quot;https://github.com/QuantumWarpCode/yt-dlp-dearrow&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;yt-dlp-dearrow plugin&lt;/span&gt;&lt;/a&gt;, replaces &lt;span style=&quot; font-weight:600;&quot;&gt;%(title)s&lt;br/&gt;&lt;/span&gt;Access original with &lt;span style=&quot; font-weight:600;&quot;&gt;%(original_title)s&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
            <item row="1" column="1">
             <widget class="QLabel" name="label_dearrow_thumbnail_help">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Manually download an additional thumbnail&lt;br/&gt;an image (webp) from &lt;a href=&quot;https://wiki.sponsor.ajay.app/w/API_Docs/DeArrow#GET_/api/v1/getThumbnail&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;DeArrow's API&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Manually download an additional thumbnail&lt;br/&gt;an image (webp) from &lt;a href=&quot;https://wiki.sponsor.ajay.app/w/API_Docs/DeArrow#GET_/api/v1/getThumbnail&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;DeArrow's API&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -2119,6 +2146,9 @@ durations</string>
              <property name="alignment">
               <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
              </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
            <item row="1" column="0" rowspan="2">
@@ -2127,7 +2157,7 @@ durations</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input and ouput params are already provided as follows:&lt;br/&gt;&amp;gt; ffmpeg &lt;span style=&quot; font-weight:600;&quot;&gt;-i %(_filename)s &lt;/span&gt;[...]&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;%(_filename)s&lt;/span&gt;_ffmpeg.&lt;span style=&quot; font-weight:600;&quot;&gt;[Output container]&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
              </property>
             </widget>
            </item>
@@ -2313,7 +2343,10 @@ durations</string>
               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/arkrow/PyMusicLooper/blob/master/CLI_README.md&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Read PyMusicLopper's documentzation&lt;/span&gt;&lt;/a&gt;.&lt;br/&gt;Input audio is already provided&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -2356,10 +2389,13 @@ durations</string>
            <item row="7" column="2" rowspan="2" colspan="2">
             <widget class="QLabel" name="label_pyml_split_help">
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Split the input audio into intro,&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;loop &lt;/span&gt;and outro sections&lt;br/&gt;🛈 Play the &lt;span style=&quot; font-weight:600;&quot;&gt;loop&lt;/span&gt; section with&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gapless_playback&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;gapless playback&lt;/span&gt;&lt;/a&gt; for immediate effect&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Split the input audio into intro,&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;loop &lt;/span&gt;and outro sections&lt;br/&gt;&amp;#128712; Play the &lt;span style=&quot; font-weight:600;&quot;&gt;loop&lt;/span&gt; section with&lt;br/&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Gapless_playback&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;gapless playback&lt;/span&gt;&lt;/a&gt; for immediate effect&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="openExternalLinks">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -2468,7 +2504,7 @@ durations</string>
         <item row="0" column="1" alignment="Qt::AlignTop">
          <widget class="QGroupBox" name="groupBox_worker">
           <property name="enabled">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="title">
            <string>Workers</string>
@@ -2486,6 +2522,9 @@ durations</string>
            </item>
            <item row="1" column="1">
             <widget class="QSpinBox" name="spinBox_worker_ytdlp">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="minimum">
               <number>1</number>
              </property>
@@ -2503,6 +2542,9 @@ durations</string>
            </item>
            <item row="2" column="1">
             <widget class="QSpinBox" name="spinBox_worker_exproc">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="minimum">
               <number>1</number>
              </property>
@@ -2520,10 +2562,10 @@ durations</string>
               </sizepolicy>
              </property>
              <property name="text">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;🛈 Not implemented&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&amp;#128712; Not implemented&lt;/p&gt;&lt;p&gt;Note to self: multi-producer&lt;br/&gt;multi-consumer pattern&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
              <property name="textFormat">
-              <enum>Qt::RichText</enum>
+              <enum>Qt::AutoText</enum>
              </property>
             </widget>
            </item>

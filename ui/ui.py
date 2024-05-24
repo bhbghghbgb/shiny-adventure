@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'ui.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.0
+## Created by: Qt User Interface Compiler version 6.7.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -183,15 +183,17 @@ class Ui_MainWindow(object):
 
         self.label_argument_filename_help = QLabel(self.groupBox_arguments)
         self.label_argument_filename_help.setObjectName(u"label_argument_filename_help")
-        self.label_argument_filename_help.setTextFormat(Qt.RichText)
+        self.label_argument_filename_help.setTextFormat(Qt.AutoText)
         self.label_argument_filename_help.setAlignment(Qt.AlignCenter)
+        self.label_argument_filename_help.setOpenExternalLinks(True)
 
         self.gridLayout.addWidget(self.label_argument_filename_help, 2, 3, 1, 2)
 
         self.label_argument_ytdlp_args_help = QLabel(self.groupBox_arguments)
         self.label_argument_ytdlp_args_help.setObjectName(u"label_argument_ytdlp_args_help")
-        self.label_argument_ytdlp_args_help.setTextFormat(Qt.RichText)
+        self.label_argument_ytdlp_args_help.setTextFormat(Qt.AutoText)
         self.label_argument_ytdlp_args_help.setAlignment(Qt.AlignCenter)
+        self.label_argument_ytdlp_args_help.setOpenExternalLinks(True)
 
         self.gridLayout.addWidget(self.label_argument_ytdlp_args_help, 4, 3, 1, 2)
 
@@ -285,7 +287,8 @@ class Ui_MainWindow(object):
 
         self.label_ytdlp_github = QLabel(self.groupBox_info)
         self.label_ytdlp_github.setObjectName(u"label_ytdlp_github")
-        self.label_ytdlp_github.setTextFormat(Qt.RichText)
+        self.label_ytdlp_github.setTextFormat(Qt.AutoText)
+        self.label_ytdlp_github.setOpenExternalLinks(True)
 
         self.horizontalLayout_4.addWidget(self.label_ytdlp_github)
 
@@ -357,7 +360,8 @@ class Ui_MainWindow(object):
 
         self.label_ppspices_remux_recode_help = QLabel(self.groupBox_ppspices)
         self.label_ppspices_remux_recode_help.setObjectName(u"label_ppspices_remux_recode_help")
-        self.label_ppspices_remux_recode_help.setTextFormat(Qt.RichText)
+        self.label_ppspices_remux_recode_help.setTextFormat(Qt.AutoText)
+        self.label_ppspices_remux_recode_help.setOpenExternalLinks(True)
 
         self.gridLayout_20.addWidget(self.label_ppspices_remux_recode_help, 6, 0, 1, 2)
 
@@ -409,7 +413,8 @@ class Ui_MainWindow(object):
         self.gridLayout_8.setObjectName(u"gridLayout_8")
         self.label_subtitle_language = QLabel(self.groupBox_subtitle)
         self.label_subtitle_language.setObjectName(u"label_subtitle_language")
-        self.label_subtitle_language.setTextFormat(Qt.RichText)
+        self.label_subtitle_language.setTextFormat(Qt.AutoText)
+        self.label_subtitle_language.setOpenExternalLinks(True)
 
         self.gridLayout_8.addWidget(self.label_subtitle_language, 2, 0, 2, 1)
 
@@ -555,7 +560,8 @@ class Ui_MainWindow(object):
 
         self.label_returnytdislikes_help = QLabel(self.groupBox_returnytdislikes)
         self.label_returnytdislikes_help.setObjectName(u"label_returnytdislikes_help")
-        self.label_returnytdislikes_help.setTextFormat(Qt.RichText)
+        self.label_returnytdislikes_help.setTextFormat(Qt.AutoText)
+        self.label_returnytdislikes_help.setOpenExternalLinks(True)
 
         self.gridLayout_21.addWidget(self.label_returnytdislikes_help, 1, 0, 1, 1)
 
@@ -573,7 +579,8 @@ class Ui_MainWindow(object):
 
         self.label_dontlock_help = QLabel(self.groupBox_dontlock)
         self.label_dontlock_help.setObjectName(u"label_dontlock_help")
-        self.label_dontlock_help.setTextFormat(Qt.RichText)
+        self.label_dontlock_help.setTextFormat(Qt.AutoText)
+        self.label_dontlock_help.setOpenExternalLinks(True)
 
         self.gridLayout_23.addWidget(self.label_dontlock_help, 1, 0, 1, 1)
 
@@ -623,13 +630,15 @@ class Ui_MainWindow(object):
 
         self.label_dearrow_title_help = QLabel(self.groupBox_dearrow)
         self.label_dearrow_title_help.setObjectName(u"label_dearrow_title_help")
-        self.label_dearrow_title_help.setTextFormat(Qt.RichText)
+        self.label_dearrow_title_help.setTextFormat(Qt.AutoText)
+        self.label_dearrow_title_help.setOpenExternalLinks(True)
 
         self.gridLayout_22.addWidget(self.label_dearrow_title_help, 0, 1, 1, 1)
 
         self.label_dearrow_thumbnail_help = QLabel(self.groupBox_dearrow)
         self.label_dearrow_thumbnail_help.setObjectName(u"label_dearrow_thumbnail_help")
-        self.label_dearrow_thumbnail_help.setTextFormat(Qt.RichText)
+        self.label_dearrow_thumbnail_help.setTextFormat(Qt.AutoText)
+        self.label_dearrow_thumbnail_help.setOpenExternalLinks(True)
 
         self.gridLayout_22.addWidget(self.label_dearrow_thumbnail_help, 1, 1, 1, 1)
 
@@ -1267,12 +1276,13 @@ class Ui_MainWindow(object):
         sizePolicy1.setHeightForWidth(self.label_ffmpeg_help_right.sizePolicy().hasHeightForWidth())
         self.label_ffmpeg_help_right.setSizePolicy(sizePolicy1)
         self.label_ffmpeg_help_right.setAlignment(Qt.AlignBottom|Qt.AlignLeading|Qt.AlignLeft)
+        self.label_ffmpeg_help_right.setOpenExternalLinks(True)
 
         self.gridLayout_27.addWidget(self.label_ffmpeg_help_right, 0, 1, 2, 1)
 
         self.label_ffmpeg_help_left = QLabel(self.groupBox_ffmpeg)
         self.label_ffmpeg_help_left.setObjectName(u"label_ffmpeg_help_left")
-        self.label_ffmpeg_help_left.setTextFormat(Qt.RichText)
+        self.label_ffmpeg_help_left.setTextFormat(Qt.AutoText)
 
         self.gridLayout_27.addWidget(self.label_ffmpeg_help_left, 1, 0, 2, 1)
 
@@ -1385,7 +1395,8 @@ class Ui_MainWindow(object):
 
         self.label_pyml_help_left = QLabel(self.groupBox_pymlmain)
         self.label_pyml_help_left.setObjectName(u"label_pyml_help_left")
-        self.label_pyml_help_left.setTextFormat(Qt.RichText)
+        self.label_pyml_help_left.setTextFormat(Qt.AutoText)
+        self.label_pyml_help_left.setOpenExternalLinks(True)
 
         self.gridLayout_29.addWidget(self.label_pyml_help_left, 2, 0, 1, 2)
 
@@ -1411,7 +1422,8 @@ class Ui_MainWindow(object):
 
         self.label_pyml_split_help = QLabel(self.groupBox_pymlmain)
         self.label_pyml_split_help.setObjectName(u"label_pyml_split_help")
-        self.label_pyml_split_help.setTextFormat(Qt.RichText)
+        self.label_pyml_split_help.setTextFormat(Qt.AutoText)
+        self.label_pyml_split_help.setOpenExternalLinks(True)
 
         self.gridLayout_29.addWidget(self.label_pyml_split_help, 7, 2, 2, 2)
 
@@ -1489,7 +1501,7 @@ class Ui_MainWindow(object):
 
         self.groupBox_worker = QGroupBox(self.tab_behavior)
         self.groupBox_worker.setObjectName(u"groupBox_worker")
-        self.groupBox_worker.setEnabled(False)
+        self.groupBox_worker.setEnabled(True)
         self.groupBox_worker.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.gridLayout_6 = QGridLayout(self.groupBox_worker)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
@@ -1500,6 +1512,7 @@ class Ui_MainWindow(object):
 
         self.spinBox_worker_ytdlp = QSpinBox(self.groupBox_worker)
         self.spinBox_worker_ytdlp.setObjectName(u"spinBox_worker_ytdlp")
+        self.spinBox_worker_ytdlp.setEnabled(False)
         self.spinBox_worker_ytdlp.setMinimum(1)
         self.spinBox_worker_ytdlp.setMaximum(16)
 
@@ -1512,6 +1525,7 @@ class Ui_MainWindow(object):
 
         self.spinBox_worker_exproc = QSpinBox(self.groupBox_worker)
         self.spinBox_worker_exproc.setObjectName(u"spinBox_worker_exproc")
+        self.spinBox_worker_exproc.setEnabled(False)
         self.spinBox_worker_exproc.setMinimum(1)
         self.spinBox_worker_exproc.setMaximum(16)
 
@@ -1524,7 +1538,7 @@ class Ui_MainWindow(object):
         sizePolicy12.setVerticalStretch(0)
         sizePolicy12.setHeightForWidth(self.label_worker_help.sizePolicy().hasHeightForWidth())
         self.label_worker_help.setSizePolicy(sizePolicy12)
-        self.label_worker_help.setTextFormat(Qt.RichText)
+        self.label_worker_help.setTextFormat(Qt.AutoText)
 
         self.gridLayout_6.addWidget(self.label_worker_help, 0, 0, 1, 2)
 
@@ -1697,10 +1711,10 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_spices), QCoreApplication.translate("MainWindow", u"Spices", None))
         self.groupBox_returnytdislikes.setTitle(QCoreApplication.translate("MainWindow", u"Return Youtube Dislikes", None))
         self.checkBox_returnytdislikes.setText(QCoreApplication.translate("MainWindow", u"Add a Youtube Dislike count to Youtube video metadata", None))
-        self.label_returnytdislikes_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Uses <a href=\"https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dlp-ReturnYoutubeDislike plugin</span></a>. Then use <span style=\" font-weight:600;\">%(dislike_count)s<br/></span>Updated info fields: like_count, dislike_count, average_rating, view_count<br/>The original values of those fields and the response from the API are saved<br/>under <span style=\" font-weight:600;\">RYD</span> key in the info dict</p></body></html>", None))
+        self.label_returnytdislikes_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Uses <a href=\"https://github.com/pukkandan/yt-dlp-ReturnYoutubeDislike\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dlp-ReturnYoutubeDislike plugin</span></a>. Then use <span style=\" font-weight:600;\">%(dislike_count)s<br/></span>Updated info fields: like_count, dislike_count, average_rating, view_count<br/>The original values of those fields and the response from the API are saved<br/>under <span style=\" font-weight:600;\">RYD</span> key in the info dict</p></body></html>", None))
         self.groupBox_dontlock.setTitle(QCoreApplication.translate("MainWindow", u"Don't lock", None))
         self.checkBox_dontlock.setText(QCoreApplication.translate("MainWindow", u"Keep awake during yt-dlp's execution", None))
-        self.label_dontlock_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Uses <a href=\"https://github.com/Grub4K/yt-dont-lock-p\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dont-lock-p plugin<br/></span></a>Only applies to yt-dlp's execution</p><p>\ud83d\udec8 Doesn't apply to <span style=\" text-decoration: underline;\">Extra processing</span><br/>Use <span style=\" text-decoration: underline;\">Behavior</span> for that</p></body></html>", None))
+        self.label_dontlock_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Uses <a href=\"https://github.com/Grub4K/yt-dont-lock-p\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dont-lock-p plugin<br/></span></a>Only applies to yt-dlp's execution</p><p>&#128712; Doesn't apply to <span style=\" text-decoration: underline;\">Extra processing</span><br/>Use <span style=\" text-decoration: underline;\">Behavior</span> for that</p></body></html>", None))
         self.groupBox_internetshortcut.setTitle(QCoreApplication.translate("MainWindow", u"Internet shortcut", None))
         self.checkBox_internetshortcut_windows.setText(QCoreApplication.translate("MainWindow", u".url Windows", None))
         self.checkBox_internetshortcut_mac.setText(QCoreApplication.translate("MainWindow", u".webloc macOS", None))
@@ -1709,8 +1723,8 @@ class Ui_MainWindow(object):
         self.groupBox_dearrow.setTitle(QCoreApplication.translate("MainWindow", u"DeArrow", None))
         self.checkBox_dearrow_title.setText(QCoreApplication.translate("MainWindow", u"Replace title", None))
         self.checkBox_dearrow_thumbnail.setText(QCoreApplication.translate("MainWindow", u"Download thumbnail", None))
-        self.label_dearrow_title_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Uses <a href=\"https://github.com/QuantumWarpCode/yt-dlp-dearrow\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dlp-dearrow plugin</span></a>, replaces <span style=\" font-weight:600;\">%(title)s<br/></span>Access original with <span style=\" font-weight:600;\">%(original_title)s</span></p></body></html>", None))
-        self.label_dearrow_thumbnail_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Manually download an additional thumbnail<br/>an image (webp) from <a href=\"https://wiki.sponsor.ajay.app/w/API_Docs/DeArrow#GET_/api/v1/getThumbnail\"><span style=\" text-decoration: underline; color:#0000ff;\">DeArrow's API</span></a></p></body></html>", None))
+        self.label_dearrow_title_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Uses <a href=\"https://github.com/QuantumWarpCode/yt-dlp-dearrow\"><span style=\" text-decoration: underline; color:#0000ff;\">yt-dlp-dearrow plugin</span></a>, replaces <span style=\" font-weight:600;\">%(title)s<br/></span>Access original with <span style=\" font-weight:600;\">%(original_title)s</span></p></body></html>", None))
+        self.label_dearrow_thumbnail_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Manually download an additional thumbnail<br/>an image (webp) from <a href=\"https://wiki.sponsor.ajay.app/w/API_Docs/DeArrow#GET_/api/v1/getThumbnail\"><span style=\" text-decoration: underline; color:#0000ff;\">DeArrow's API</span></a></p></body></html>", None))
         self.groupBox_sponsorblock.setTitle(QCoreApplication.translate("MainWindow", u"SponsorBlock", None))
         self.radioButton_sponsorblock_remove.setText(QCoreApplication.translate("MainWindow", u"Remove", None))
         self.radioButton_sponsorblock_disable.setText(QCoreApplication.translate("MainWindow", u"Disable", None))
@@ -1885,7 +1899,7 @@ class Ui_MainWindow(object):
         self.label_pyml_extend_fade.setText(QCoreApplication.translate("MainWindow", u"Fade out duration", None))
         self.doubleSpinBox_pyml_extend_fade.setSuffix(QCoreApplication.translate("MainWindow", u"s", None))
         self.radioButton_split.setText(QCoreApplication.translate("MainWindow", u"Split the input file", None))
-        self.label_pyml_split_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Split the input audio into intro,<br/><span style=\" font-weight:600;\">loop </span>and outro sections<br/>\ud83d\udec8 Play the <span style=\" font-weight:600;\">loop</span> section with<br/><a href=\"https://en.wikipedia.org/wiki/Gapless_playback\"><span style=\" text-decoration: underline; color:#0000ff;\">gapless playback</span></a> for immediate effect</p></body></html>", None))
+        self.label_pyml_split_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Split the input audio into intro,<br/><span style=\" font-weight:600;\">loop </span>and outro sections<br/>&#128712; Play the <span style=\" font-weight:600;\">loop</span> section with<br/><a href=\"https://en.wikipedia.org/wiki/Gapless_playback\"><span style=\" text-decoration: underline; color:#0000ff;\">gapless playback</span></a> for immediate effect</p></body></html>", None))
         self.radioButton_pyml_export.setText(QCoreApplication.translate("MainWindow", u"Export to text file", None))
         self.radioButton_pyml_extend.setText(QCoreApplication.translate("MainWindow", u"Extends the input file", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_extra_processing), QCoreApplication.translate("MainWindow", u"Extra processing", None))
@@ -1902,7 +1916,7 @@ class Ui_MainWindow(object):
         self.groupBox_worker.setTitle(QCoreApplication.translate("MainWindow", u"Workers", None))
         self.label_worker_ytdlp.setText(QCoreApplication.translate("MainWindow", u"yt-dlp workers", None))
         self.label_worker_exproc.setText(QCoreApplication.translate("MainWindow", u"Extra processing workers", None))
-        self.label_worker_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>\ud83d\udec8 Not implemented</p></body></html>", None))
+        self.label_worker_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Not implemented</p><p>Note to self: multi-producer<br/>multi-consumer pattern</p></body></html>", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_behavior), QCoreApplication.translate("MainWindow", u"Behavior", None))
         self.groupBox_status.setTitle(QCoreApplication.translate("MainWindow", u"Status", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"&File", None))
