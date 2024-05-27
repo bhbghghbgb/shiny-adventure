@@ -1,11 +1,12 @@
 import os
 import shlex
 from dataclasses import dataclass
+import ui_constants
 
 import string_utils
 import yt_dlp
 
-from exceptions import UiCorruptionError
+from exceptions import UiStateConsistencyError
 from ui.main_window import MainWindow
 
 
@@ -53,13 +54,29 @@ class MainController:
 
         # regular options
         opts = []
-        if self.ui.radioButton_stream_both.isChecked():
-            stream_opt = "both"
-        elif self.ui.radioButton_stream_audio.isChecked():
-            stream_opt = "audio"
-        else:
-            raise UiCorruptionError(
-                [self.ui.radioButton_stream_both, self.ui.radioButton_stream_audio],
-                "None of the Stream RadioButtons in General tab is selected",
-            )
+        match self.ui.buttonGroup_stream.checkedId():
+            case ui_constants.STREAM_BOTH_GROUP_ID:
+                stream_opt = "both"
+            case ui_constants.STREAM_AUDIO_GROUP_ID:
+                stream_opt = "audio"
+            case checkedId as _:
+                raise UiStateConsistencyError(
+                    [self.ui.buttonGroup_stream, *self.ui.buttonGroup_stream.buttons()],
+                    f"None of the Stream RadioButtons in General tab is selected, checkedId()={checkedId}",
+                )
+        match self.ui.buttonGroup_quality.checkedId():
+            case ui_constants.QUALITY_BEST_GROUP_ID:
+                quality_filter_opt = "best"
+            case ui_constants.QUALITY_WORST_GROUP_ID:
+                quality_filter_opt = "worst"
+            case ui_constants.QUALITY_AT_MOST_GROUP_ID:
+                quality_filter_opt = "at_most"
+            case ui_constants.QUALITY_AT_LEAST_GROUP_ID:
+                quality_filter_opt = "at_least"
+            case checkedId as _:
+                raise UiStateConsistencyError(
+                    [self.ui.buttonGroup_stream, *self.ui.buttonGroup_stream.buttons()],
+                    f"None of the Quality RadioButtons in General tab is selected, checkedId()={checkedId}",
+                    
+                )
         # TODO: continue the General tab

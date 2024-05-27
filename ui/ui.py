@@ -1415,10 +1415,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout_29.addWidget(self.doubleSpinBox_pyml_extend_fade, 8, 1, 1, 1)
 
-        self.radioButton_split = QRadioButton(self.groupBox_pymlmain)
-        self.radioButton_split.setObjectName(u"radioButton_split")
+        self.radioButton_pyml_split = QRadioButton(self.groupBox_pymlmain)
+        self.radioButton_pyml_split.setObjectName(u"radioButton_pyml_split")
 
-        self.gridLayout_29.addWidget(self.radioButton_split, 6, 2, 1, 2)
+        self.gridLayout_29.addWidget(self.radioButton_pyml_split, 6, 2, 1, 2)
 
         self.label_pyml_split_help = QLabel(self.groupBox_pymlmain)
         self.label_pyml_split_help.setObjectName(u"label_pyml_split_help")
@@ -1581,7 +1581,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1898,7 +1898,7 @@ class Ui_MainWindow(object):
         self.label_pyml_help_left.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><a href=\"https://github.com/arkrow/PyMusicLooper/blob/master/CLI_README.md\"><span style=\" text-decoration: underline; color:#0000ff;\">Read PyMusicLopper's documentzation</span></a>.<br/>Input audio is already provided</p></body></html>", None))
         self.label_pyml_extend_fade.setText(QCoreApplication.translate("MainWindow", u"Fade out duration", None))
         self.doubleSpinBox_pyml_extend_fade.setSuffix(QCoreApplication.translate("MainWindow", u"s", None))
-        self.radioButton_split.setText(QCoreApplication.translate("MainWindow", u"Split the input file", None))
+        self.radioButton_pyml_split.setText(QCoreApplication.translate("MainWindow", u"Split the input file", None))
         self.label_pyml_split_help.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>&#128712; Split the input audio into intro,<br/><span style=\" font-weight:600;\">loop </span>and outro sections<br/>&#128712; Play the <span style=\" font-weight:600;\">loop</span> section with<br/><a href=\"https://en.wikipedia.org/wiki/Gapless_playback\"><span style=\" text-decoration: underline; color:#0000ff;\">gapless playback</span></a> for immediate effect</p></body></html>", None))
         self.radioButton_pyml_export.setText(QCoreApplication.translate("MainWindow", u"Export to text file", None))
         self.radioButton_pyml_extend.setText(QCoreApplication.translate("MainWindow", u"Extends the input file", None))
